@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario HTML</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Este es mi formulario</legend>
+        <form action="procesar.html" method="get" enctype="multipart/form-data">
+            <div>
+                <label for="usuario">Usuario: </label>
+                <input type="text" name="usuario" id="usuario">
+            </div>
+            <div>
+                <label for="correo">Correo: </label>
+                <input type="email" name="correo" id="correo">
+            </div>
+            <div>
+                <label for="clave">Contrasena: </label>
+                <input type="password" name="clave" id="clave">
+            </div>
+            <div>
+                <label for="confirmar">Confirmar Contrasena: </label>
+                <input type="password" name="confirmar" id="confirmar">
+            </div>
+            <div>
+                <label for="foto">Subir fotografia: </label>
+                <input type="file" name="foto" id="foto" accept=".jpg,.png">
+            </div>
+            <div>
+                <label for="genero_m">Genero: </label>
+                <input type="radio" name="genero" id="genero_m" value="M">Masculino
+                <input type="radio" name="genero" id="genero_f" value="F">Femenino
+            </div>
+            <div>
+                <label for="pais">Pais: </label>
+                <select name="pais" id="pais" required>
+                <!-- <select name="pais" id="pais" multiple> -->
+                    <option value="">-- Select --</option>
+                    <option value="sv">El Salvador</option>
+                    <option value="us">United States</option>
+                    <option value="uk">United Kingdom</option>
+                </select>
+            </div>
+            <div>
+                <label for="hobby1">Hobyy: </label>
+                <input type="checkbox" name="hobby" id="hobby1" value="1">Basketball
+                <input type="checkbox" name="hobby" id="hobby2" value="2">Football
+                <input type="checkbox" name="hobby" id="hobby3" value="3">Volleyball
+            </div>
+            <div>
+                <label for="dir">Direccion: </label><br>
+                <textarea name="dir" id="dir" cols="30" rows="5"></textarea>
+            </div>
+            <div>
+                <label for="fecha">Fecha: </label>
+                <input type="date" name="fecha" id="fecha" value="2023-12-31">
+            </div>
+            <input type="submit" value="Enviar">
+        </form>
+    </fieldset>
+</body>
+</html>

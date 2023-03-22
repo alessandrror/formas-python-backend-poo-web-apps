@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario HTML</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Este es mi formulario</legend>
+        <form action="procesar.html" method="post">
+            <div>
+                <label for="usuario">Usuario: </label>
+                <input type="text" name="usuario" id="usuario">
+            </div>
+            <div>
+                <label for="correo">Correo: </label>
+                <input type="email" name="correo" id="correo">
+            </div>
+            <div>
+                <label for="clave">Contrasena: </label>
+                <input type="password" name="clave" id="clave">
+            </div>
+            <div>
+                <label for="confirmar">Confirmar Contrasena: </label>
+                <input type="password" name="confirmar" id="confirmar">
+            </div>
+            <input type="submit" value="Enviar">
+        </form>
+    </fieldset>
+</body>
+</html>

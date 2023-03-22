@@ -1,0 +1,31 @@
+*  {box-sizing: border-box;}
+html {position: relative;min-height: 100%;}
+body {font-family: sans-serif, Verdana, 'Lucida Sans';}
+.main{display: flex;justify-content: center;}
+.login {padding: 35px;border-radius: 20px;width: 40%;margin-top: 75px;}
+.img_user{margin: auto;display: block;}
+.titulo{text-align: center; font-style: italic;}
+.etiqueta, .textbox, .btn-enviar, .forgot{display: block;margin-bottom: 10px;}
+.textbox {width: 100%;padding: 5px;}
+.btn-enviar{background-color: #1d8097;padding: 10px;color:#fff; border: none}
+.forgot{text-align: right;text-decoration: none;}
+.btn-enviar:hover{background-color: #155d74; cursor: pointer;}
+.header {
+    background-color: #1d8097;position: fixed;width: 100%;top:0;left:0;
+}
+.header a {
+    color: #fff;text-decoration: none;padding: 20px 15px;font-size: 18px;
+    display: block; float: left;
+}
+.header a:hover{background-color: #155d74;}
+.header a.activo{background-color: #155d74;}
+/* TODO: crear estilo del pie de pagina */
+.login{min-width: 400px;}
+.img_user{width: 60%;height: auto;}
+@media screen and (max-width: 600px){
+    .header a{float: none}
+    .login {margin-top: 200px;}
+}
+@media screen and (max-width: 480px){
+    .img_user{display: none;}
+}

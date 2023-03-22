@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesion</title>
+    <link rel="stylesheet" href="static/css/estilos.css">
+</head>
+<body>
+    <div class="header">
+        <a href="index.html">Inicio</a>
+        <a href="form.html">Inicio</a>
+        <a href="tablas.html">A cerca de</a>
+    </div>
+    <div class="main">
+        <div class="login">
+            <img src="static/img/user.png" alt="" class="img_user">
+            <h1 class="titulo">Login</h1>
+            <form action="procesar.html">
+                <div>
+                    <label for="usuario" class="etiqueta">Usuario:</label>
+                    <input type="text" name="usuario" id="usuario" class="textbox">
+                </div>
+                <div>
+                    <label for="clave" class="etiqueta">Contraseña:</label>
+                    <input type="password" name="clave" id="clave" class="textbox">
+                </div>
+                <input type="submit" value="Iniciar" class="btn-enviar">
+                <a href="forgot.html" class="forgot">Olvidaste tu contraseña</a>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; Copyright 2023</p>
+    </div>
+</body>
+</html>
